@@ -22,7 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import kotlinx.android.synthetic.main.activity_step1.*
 
-class Step3Activity : AppCompatActivity() {
+class Step3Activity : BaseChildActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

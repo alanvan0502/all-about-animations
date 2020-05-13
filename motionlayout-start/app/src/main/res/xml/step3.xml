@@ -26,8 +26,22 @@
                 app:targetId="@id/moon"
                 app:clickAction="toggle"
         />
-
-        <!-- TODO: Add KeyFrameSet and KeyPosition -->
+        <KeyFrameSet>
+            <KeyPosition
+                app:framePosition="50"
+                app:motionTarget="@id/moon"
+                app:keyPositionType="parentRelative"
+                app:percentY="0.5"/>
+            <KeyPosition
+                app:framePosition="50"
+                app:motionTarget="@id/credits"
+                app:keyPositionType="parentRelative"
+                app:percentY="0.6"/>
+            <KeyAttribute
+                app:framePosition="50"
+                app:motionTarget="@id/credits"
+                android:alpha="1.0"/>
+        </KeyFrameSet>
     </Transition>
 
     <!-- Constraints to apply at the start of the animation -->
@@ -64,9 +78,9 @@
                 android:id="@id/credits"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:alpha="1.0"
+                android:alpha="0.0"
                 android:layout_marginStart="16dp"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="@id/moon"
                 app:layout_constraintTop_toTopOf="@id/moon"
         />

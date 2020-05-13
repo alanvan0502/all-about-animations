@@ -24,7 +24,7 @@ import androidx.lifecycle.LiveData
 
 import kotlinx.android.synthetic.main.activity_step1.*
 
-class Step7Activity : AppCompatActivity() {
+class Step7Activity : BaseChildActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

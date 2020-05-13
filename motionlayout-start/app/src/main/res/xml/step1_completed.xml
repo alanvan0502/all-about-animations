@@ -25,7 +25,7 @@
         <!-- MotionLayout will handle clicks on @id/star to "toggle" the animation between the start and end -->
         <OnClick
                 app:targetId="@id/red_star"
-                app:clickAction="toggle" />
+                app:clickAction="jumpToEnd|jumpToStart" />
     </Transition>
 
     <!-- Constraints to apply at the start of the animation -->
