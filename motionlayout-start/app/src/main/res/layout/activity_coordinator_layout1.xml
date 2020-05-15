@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height">
+
+        <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/motion_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="60dp"
+            app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed"
+            app:layoutDescription="@xml/activity_coordinator_layout1_scene"
+            tools:context=".CoordinatorLayoutActivity1">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@color/colorDarkBlue"
+                app:altSrc="@drawable/monterey"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:transformPivotX="0dp"
+                android:transformPivotY="0dp"
+                android:textSize="24sp"
+                android:typeface="serif"
+                android:text="@string/monterey"/>
+
+            <TextView
+                android:id="@+id/sub_label"
+                android:text="@string/california"
+                android:textSize="24sp"
+                android:fontFamily="cursive"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_scrolling"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

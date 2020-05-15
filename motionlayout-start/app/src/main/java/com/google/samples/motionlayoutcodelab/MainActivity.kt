@@ -24,7 +24,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import androidx.constraintlayout.motion.widget.KeyPosition
 import androidx.recyclerview.widget.RecyclerView
 import kotlin.reflect.KClass
 
@@ -122,6 +121,12 @@ private val data = listOf(
         "KeyframePosition 1",
         "KeyframePosition 1",
         KeyframePosition1::class
+    ),
+    Step(
+        "CoordinatorLayout 1",
+        "CoordinatorLayout 1",
+        "CoordinatorLayout 1",
+        CoordinatorLayoutActivity1::class
     )
 )
 

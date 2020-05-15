@@ -11,8 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".KeyframePosition1"></activity>
-        <activity android:name=".ImageFilter2"></activity>
+        <activity android:name=".CoordinatorLayoutActivity1"></activity>
+        <activity android:name=".KeyframePosition1" />
+        <activity android:name=".ImageFilter2" />
         <activity android:name=".ImageFilter1" />
         <activity android:name=".BasicExample1" />
         <activity
