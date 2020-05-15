@@ -1,6 +1,8 @@
-package com.google.samples.motionlayoutcodelab
+package com.google.samples.motionlayoutcodelab.image_filter
 
 import android.os.Bundle
+import com.google.samples.motionlayoutcodelab.BaseChildActivity
+import com.google.samples.motionlayoutcodelab.R
 
 class ImageFilter1 : BaseChildActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

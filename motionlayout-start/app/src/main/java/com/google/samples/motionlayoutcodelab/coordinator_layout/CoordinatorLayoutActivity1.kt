@@ -1,8 +1,9 @@
-package com.google.samples.motionlayoutcodelab
+package com.google.samples.motionlayoutcodelab.coordinator_layout
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.appbar.AppBarLayout
+import com.google.samples.motionlayoutcodelab.R
 import kotlinx.android.synthetic.main.activity_coordinator_layout1.*
 
 class CoordinatorLayoutActivity1 : AppCompatActivity() {

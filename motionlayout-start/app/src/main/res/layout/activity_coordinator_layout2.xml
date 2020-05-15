@@ -17,36 +17,38 @@
             android:layout_height="match_parent"
             android:minHeight="60dp"
             app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed"
-            app:layoutDescription="@xml/activity_coordinator_layout1_scene"
-            tools:context=".coordinator_layout.CoordinatorLayoutActivity1">
+            app:layoutDescription="@xml/activity_coordinator_layout2_scene"
+            tools:context=".coordinator_layout.CoordinatorLayoutActivity2">
 
             <androidx.constraintlayout.utils.widget.ImageFilterView
-                android:id="@+id/image"
+                android:id="@+id/background"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@color/colorDarkBlue"
-                app:altSrc="@drawable/monterey"
+                app:altSrc="@drawable/sea"
                 android:scaleType="centerCrop"/>
 
-            <TextView
-                android:id="@+id/label"
+            <ImageView
+                android:id="@+id/avatar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
-                android:transformPivotX="0dp"
-                android:transformPivotY="0dp"
-                android:textSize="24sp"
-                android:typeface="serif"
-                android:text="@string/monterey"/>
+                tools:src="@drawable/roard"/>
 
             <TextView
-                android:id="@+id/sub_label"
-                android:text="@string/california"
-                android:textSize="24sp"
-                android:fontFamily="cursive"
-                android:textColor="@color/colorWhite"
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:text="@string/nicolas_road"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="@+id/background"
+                tools:layout_editor_absoluteX="165dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guide_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5"/>
 
         </androidx.constraintlayout.motion.widget.MotionLayout>
 
@@ -56,3 +58,4 @@
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+

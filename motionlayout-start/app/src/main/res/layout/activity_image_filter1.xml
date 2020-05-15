@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layoutDescription="@xml/activity_image_filter1_scene"
-    tools:context=".ImageFilter1"
+    tools:context=".image_filter.ImageFilter1"
     app:showPaths="true">
 
     <androidx.constraintlayout.utils.widget.ImageFilterView

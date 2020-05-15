@@ -25,6 +25,12 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.google.samples.motionlayoutcodelab.basic.*
+import com.google.samples.motionlayoutcodelab.coordinator_layout.CoordinatorLayoutActivity1
+import com.google.samples.motionlayoutcodelab.coordinator_layout.CoordinatorLayoutActivity2
+import com.google.samples.motionlayoutcodelab.image_filter.ImageFilter1
+import com.google.samples.motionlayoutcodelab.image_filter.ImageFilter2
+import com.google.samples.motionlayoutcodelab.viewpager_lottie.ViewPagerLottieActivity
 import kotlin.reflect.KClass
 
 data class Step(
@@ -127,6 +133,18 @@ private val data = listOf(
         "CoordinatorLayout 1",
         "CoordinatorLayout 1",
         CoordinatorLayoutActivity1::class
+    ),
+    Step(
+        "CoordinatorLayout 2",
+        "CoordinatorLayout 2",
+        "CoordinatorLayout 2",
+        CoordinatorLayoutActivity2::class
+    ),
+    Step(
+        "ViewPagerLottie",
+        "ViewPagerLottie",
+        "ViewPagerLottie",
+        ViewPagerLottieActivity::class
     )
 )
 

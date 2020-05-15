@@ -11,13 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".CoordinatorLayoutActivity1"></activity>
-        <activity android:name=".KeyframePosition1" />
-        <activity android:name=".ImageFilter2" />
-        <activity android:name=".ImageFilter1" />
-        <activity android:name=".BasicExample1" />
+        <activity android:name=".viewpager_lottie.ViewPagerLottieActivity"></activity>
+        <activity android:name=".coordinator_layout.CoordinatorLayoutActivity2" />
+        <activity android:name=".coordinator_layout.CoordinatorLayoutActivity1" />
+        <activity android:name=".basic.KeyframePosition1" />
+        <activity android:name=".image_filter.ImageFilter2" />
+        <activity android:name=".image_filter.ImageFilter1" />
+        <activity android:name=".basic.BasicExample1" />
         <activity
-            android:name=".Step1Activity"
+            android:name=".basic.Step1Activity"
             android:label="@string/title_activity_step1"
             android:theme="@style/AppTheme">
             <meta-data
@@ -25,7 +27,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Step2Activity"
+            android:name=".basic.Step2Activity"
             android:label="@string/title_activity_step2"
             android:theme="@style/AppTheme">
             <meta-data
@@ -33,7 +35,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Step3Activity"
+            android:name=".basic.Step3Activity"
             android:label="@string/title_activity_step3"
             android:theme="@style/AppTheme">
             <meta-data
@@ -41,7 +43,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Step4Activity"
+            android:name=".basic.Step4Activity"
             android:label="@string/title_activity_step4"
             android:theme="@style/AppTheme">
             <meta-data
@@ -49,7 +51,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Step5Activity"
+            android:name=".basic.Step5Activity"
             android:label="@string/title_activity_step5"
             android:theme="@style/AppTheme">
             <meta-data
@@ -57,7 +59,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Step6Activity"
+            android:name=".basic.Step6Activity"
             android:label="@string/title_activity_step6"
             android:theme="@style/AppTheme">
             <meta-data
@@ -65,7 +67,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Step7Activity"
+            android:name=".basic.Step7Activity"
             android:label="@string/title_activity_step7"
             android:theme="@style/AppTheme">
             <meta-data
@@ -73,7 +75,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Step7CompletedActivity"
+            android:name=".basic.Step7CompletedActivity"
             android:label="@string/title_activity_step7_completed"
             android:theme="@style/AppTheme">
             <meta-data
@@ -81,7 +83,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Step8Activity"
+            android:name=".basic.Step8Activity"
             android:label="@string/title_activity_step8"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
@@ -89,7 +91,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".Step8CompletedActivity"
+            android:name=".basic.Step8CompletedActivity"
             android:label="@string/title_activity_step8"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data

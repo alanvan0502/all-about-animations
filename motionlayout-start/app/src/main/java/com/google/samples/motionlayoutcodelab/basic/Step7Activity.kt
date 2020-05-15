@@ -13,16 +13,16 @@
  *   limitations under the License.
  */
 
-package com.google.samples.motionlayoutcodelab
+package com.google.samples.motionlayoutcodelab.basic
 
 import android.os.Bundle
-import android.view.MenuItem
-import androidx.appcompat.app.AppCompatActivity
+import com.google.samples.motionlayoutcodelab.BaseChildActivity
+import com.google.samples.motionlayoutcodelab.R
 
-class Step1Activity : BaseChildActivity() {
+class Step7Activity : BaseChildActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_step1)
+        setContentView(R.layout.activity_step7)
     }
 }

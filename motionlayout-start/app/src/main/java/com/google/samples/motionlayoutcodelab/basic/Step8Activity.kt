@@ -13,34 +13,27 @@
  *   limitations under the License.
  */
 
-package com.google.samples.motionlayoutcodelab
+package com.google.samples.motionlayoutcodelab.basic
 
 import android.os.Bundle
-import android.util.TypedValue
-import android.view.View
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.motion.widget.MotionLayout
-import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.appbar.AppBarLayout
+import com.google.samples.motionlayoutcodelab.BaseChildActivity
+import com.google.samples.motionlayoutcodelab.R
+import kotlinx.android.synthetic.main.activity_step8.*
 
-class Step8CompletedActivity : BaseChildActivity() {
+class Step8Activity : BaseChildActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_step8_completed)
+        setContentView(R.layout.activity_step8)
 
         coordinateMotion()
     }
 
     private fun coordinateMotion() {
-        val appBarLayout: AppBarLayout = findViewById(R.id.appbar_layout)
-        val motionLayout: MotionLayout = findViewById(R.id.motion_layout)
-
-        val listener = AppBarLayout.OnOffsetChangedListener { unused, verticalOffset ->
-            val seekPosition = -verticalOffset / appBarLayout.totalScrollRange.toFloat()
-            motionLayout.progress = seekPosition
-        }
-
-        appBarLayout.addOnOffsetChangedListener(listener)
+        appbar_layout.addOnOffsetChangedListener(AppBarLayout.OnOffsetChangedListener { _, verticalOffset ->
+            val seekPosition = - verticalOffset / appbar_layout.totalScrollRange.toFloat()
+            motion_layout.progress = seekPosition
+        })
     }
 }
